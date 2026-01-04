@@ -157,7 +157,6 @@ Container for message text and content with variant styling.
 | --------- | ----------------------- | ------------------------------------------- |
 | variant   | `"contained" \| "flat"` | Visual style variant (default: "contained")  |
 | class     | `string`                | Optional CSS classes                        |
-<!-- | children  | `ReactNode`             | Message content                             | -->
 | ...props  | `HTMLAttributes`        | All standard div element props              |
 
 ### MessageAvatar
