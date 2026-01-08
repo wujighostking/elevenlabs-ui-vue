@@ -86,6 +86,22 @@ export default defineNuxtConfig({
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
+      wrangler: {
+        name: 'elevenlabs-ui-vue',
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_id: 'ec926b1b-6d1b-46e2-931d-2a123ac578ea',
+          },
+        ],
+        observability: {
+          logs: {
+            enabled: true,
+            head_sampling_rate: 1,
+            invocation_logs: true,
+          },
+        },
+      },
     },
   },
 
