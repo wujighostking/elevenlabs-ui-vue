@@ -62,7 +62,7 @@ function handlePageHighlight(isComponent: boolean, item: { path: string, title?:
   if (isComponent) {
     const componentName = item.path.split('/').pop()
     selectedType.value = 'component'
-    copyPayload.value = `${pmToDlxCommand[packageManager]} shadcn-vue@latest add ${componentName}`
+    copyPayload.value = `${pmToDlxCommand[packageManager]} elevenlabs-ui-vue@latest add ${componentName}`
   }
   else {
     selectedType.value = 'page'
